@@ -26,3 +26,23 @@ font-family: sans-serif;
     font-weight: bold;
     padding-top: 32px;
 }
+
+.item:nth-child(1) {
+background-color: brown;
+font-size: 20px;
+}
+
+.item:nth-child(2) {
+    background-color: brown;
+    font-size: 80px;
+}
+
+.item:nth-child(3) {
+    background-color: brown;
+    font-size: 100px;
+}
+
+.item:nth-child(4) {
+    background-color: brown;
+    font-size: 40px;
+}
