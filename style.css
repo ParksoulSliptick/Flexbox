@@ -30,19 +30,23 @@ font-family: sans-serif;
 .item:nth-child(1) {
 background-color: brown;
 font-size: 20px;
+padding-top: 1rem;
 }
 
 .item:nth-child(2) {
     background-color: brown;
     font-size: 80px;
+    padding-top: 1rem;
 }
 
 .item:nth-child(3) {
     background-color: brown;
     font-size: 100px;
+    padding-top: 1rem;
 }
 
 .item:nth-child(4) {
     background-color: brown;
     font-size: 40px;
+    padding-top: 1rem;
 }
