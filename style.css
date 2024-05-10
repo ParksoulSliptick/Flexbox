@@ -12,32 +12,53 @@ font-family: sans-serif;
 
 .container {
 display: flex;
-flex-direction: row;
 background-color: blue;
 }
 
 
 /*Proipiedades de Flexbox para los items
 
-flex-basis- Tamaño del main-size del elemento. Es como un "widht" ancho base de elemento.
+Flex-grow -> Esta propiuedad ajustra el factor de crecimiento de los elementos 
+en funcion del espacio disponibles, el valor por default es auto
 
-Cuando felx direction: row -> row-reverse flex:basis=ancho
-Cuando flex-direction: colum -> colum.reverse flex-basis= alto
+Esta propiedad es de valores numericoas 1 2 3 4
 
-Flex Basis: Es relativo al espacio disponible del contenedor. Si no hay espacio suficiente los elementos no creceran mas alla
-
-Si teengo flex-basis declarado el widht no funciona
+El numero que coloquemos es el factor de crecimiento
 
 
 */
 
 .item{
-    flex-basis: 100px;
-    width: 200px;
-    height: 500px;
+    flex-grow: auto;
+    flex-grow: 1;
     background-color: brown;
     text-align: center;
     font-size: 30px;
     font-weight: bold;
     border: 1px solid black;
+}
+
+.puchunguito1{
+    flex-grow: 20;
+    background-color: red;
+    color: white;
+    }
+    
+.puchunguito2{
+    flex-grow: 15;
+    background-color: green;
+    color: white;
+}
+        
+
+.puchunguito3{
+    flex-grow: 10;
+    background-color: blueviolet;
+    color: white;
+}
+    
+.puchunguito4{
+    flex-grow: 4;
+    background-color: blue;
+    color: white;
 }
