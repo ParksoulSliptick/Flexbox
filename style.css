@@ -11,78 +11,33 @@ font-family: sans-serif;
 }
 
 .container {
-    display: flex;
-    flex-wrap: wrap;
-    background-color: blue;
-    width: 350px;
-    height: 500px;
-    align-content: normal;
-    align-content: flex-start;
-    align-content: flex-end;
-    align-content: center;
-    align-content: space-around;
-    align-content: space-between;
-    align-content: space-evenly;
-    align-content: stretch;
-
-
-    align-content: space-between;
-    justify-content: space-between;
-
-
-
-    /*flex-direction: row;*/
-    /*justify-content: space-between;
-    align-items: baseline;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row-reverse;*/
-    
+display: flex;
+flex-direction: row;
+background-color: blue;
 }
 
+
+/*Proipiedades de Flexbox para los items
+
+flex-basis- Tamaño del main-size del elemento. Es como un "widht" ancho base de elemento.
+
+Cuando felx direction: row -> row-reverse flex:basis=ancho
+Cuando flex-direction: colum -> colum.reverse flex-basis= alto
+
+Flex Basis: Es relativo al espacio disponible del contenedor. Si no hay espacio suficiente los elementos no creceran mas alla
+
+Si teengo flex-basis declarado el widht no funciona
+
+
+*/
+
 .item{
-    width: 100px;
-   /*height: 100px;*/
-    background-color: antiquewhite;
+    flex-basis: 100px;
+    width: 200px;
+    height: 500px;
+    background-color: brown;
     text-align: center;
     font-size: 30px;
     font-weight: bold;
-    padding-top: 40px;
     border: 1px solid black;
 }
-
-.item:nth-child(1) {
-background-color: brown;
-}
-
-.item:nth-child(2) {
-background-color: brown;
-}
-
-.item:nth-child(3) {
-background-color: brown;
-}
-
-.item:nth-child(4) {
-background-color: brown;
-}
-
-.item:nth-child(5) {
-background-color: brown;
-}
-    
-.item:nth-child(6) {
-background-color: brown;
-}
-    
-.item:nth-child(7) {
-background-color: brown;
-}
-    
-.item:nth-child(8) {
-background-color: brown;
-}
-
-.item:nth-child(9) {
-    background-color: brown;
-    }
