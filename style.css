@@ -15,22 +15,19 @@ display: flex;
 background-color: blue;
 }
 
+/*
+Flex-shrink -> Esta propiedad funciona como un factoir de contraccion de encojimiento,
+reduccion de los elementos de un contenedor flex.
 
-/*Proipiedades de Flexbox para los items
+Flex-shrink: Este el valor por default de los items. Si no se declara esto es lo que aplica
 
-Flex-grow -> Esta propiuedad ajustra el factor de crecimiento de los elementos 
-en funcion del espacio disponibles, el valor por default es auto
-
-Esta propiedad es de valores numericoas 1 2 3 4
-
-El numero que coloquemos es el factor de crecimiento
-
-
+Recibe valores numericos: 1 2 3 4
 */
 
 .item{
-    flex-grow: auto;
+    flex-basis: 200px;
     flex-grow: 1;
+    flex-shrink: 1;
     background-color: brown;
     text-align: center;
     font-size: 30px;
@@ -38,27 +35,22 @@ El numero que coloquemos es el factor de crecimiento
     border: 1px solid black;
 }
 
-.puchunguito1{
-    flex-grow: 20;
-    background-color: red;
-    color: white;
-    }
-    
-.puchunguito2{
-    flex-grow: 15;
-    background-color: green;
-    color: white;
+.apachurro1{
+flex-grow: 4;
+flex-shrink: 1;
 }
-        
 
-.puchunguito3{
-    flex-grow: 10;
-    background-color: blueviolet;
-    color: white;
+.apachurro2{
+flex-grow: 3;
+flex-shrink: 2;
 }
-    
-.puchunguito4{
-    flex-grow: 4;
-    background-color: blue;
-    color: white;
+
+.apachurro3{
+flex-grow: 2;
+flex-shrink: 3;
+}
+
+.apachurro4{
+flex-grow: 1;
+flex-shrink: 4;
 }
