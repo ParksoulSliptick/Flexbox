@@ -10,33 +10,38 @@ background-color: aquamarine;
 font-family: sans-serif;
 }
 
-/*
-GAP -> Espacio entre los elementos
-
-Recibe valores en numeros con unidades relativas o absolutas
-
-Esta propiedad se pasa al contenedor
-*/
-
 .container {
-width: 500px;
+height: 500px;
+align-items: center;
+justify-content: space-between;
 display: flex;
-flex-wrap: wrap;
-/*gap: 24px;
-gap: 4rem; */
-column-gap: 24px;
-row-gap: 32px;
-gap: 4px 32px;
 background-color: blue;
 }
 
 .item{
     width: 100px;
     height: 100px;
-
+    align-self: center;
     background-color: brown;
     text-align: center;
     font-size: 30px;
     font-weight: bold;
     border: 1px solid black;
+}
+
+/*
+align-self -> Se pasa a uno o varios elementos en particular
+
+Va a alinear en el eje transversal a ese elemento unicamente 
+y sobre escribe la propiedad de align-items y su valor si se 
+ha declarado en el contenedor
+
+Recibe los mismos valores que align-items:
+
+start, end. center, stretch, baseline
+*/
+
+.solito{
+    align-self: flex-end;
+   /*height: auto;*/
 }
