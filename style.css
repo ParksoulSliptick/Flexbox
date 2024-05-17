@@ -10,47 +10,33 @@ background-color: aquamarine;
 font-family: sans-serif;
 }
 
+/*
+GAP -> Espacio entre los elementos
+
+Recibe valores en numeros con unidades relativas o absolutas
+
+Esta propiedad se pasa al contenedor
+*/
+
 .container {
+width: 500px;
 display: flex;
+flex-wrap: wrap;
+/*gap: 24px;
+gap: 4rem; */
+column-gap: 24px;
+row-gap: 32px;
+gap: 4px 32px;
 background-color: blue;
 }
 
-/*
-Flex-shrink -> Esta propiedad funciona como un factoir de contraccion de encojimiento,
-reduccion de los elementos de un contenedor flex.
-
-Flex-shrink: Este el valor por default de los items. Si no se declara esto es lo que aplica
-
-Recibe valores numericos: 1 2 3 4
-*/
-
 .item{
-    flex-basis: 200px;
-    flex-grow: 1;
-    flex-shrink: 1;
+    width: 100px;
+    height: 100px;
+
     background-color: brown;
     text-align: center;
     font-size: 30px;
     font-weight: bold;
     border: 1px solid black;
-}
-
-.apachurro1{
-flex-grow: 4;
-flex-shrink: 1;
-}
-
-.apachurro2{
-flex-grow: 3;
-flex-shrink: 2;
-}
-
-.apachurro3{
-flex-grow: 2;
-flex-shrink: 3;
-}
-
-.apachurro4{
-flex-grow: 1;
-flex-shrink: 4;
 }
